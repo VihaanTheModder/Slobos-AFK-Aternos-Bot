@@ -1087,7 +1087,7 @@ function formatUptime(seconds) {
 // SELF-PING - Prevent Render from sleeping
 // FIX: only ping if RENDER_EXTERNAL_URL is set (skip useless localhost ping)
 // ============================================================
-const SELF_PING_INTERVAL = 10 * 60 * 1000;
+const SELF_PING_INTERVAL = 1 * 60 * 1000;
 
 function startSelfPing() {
   const renderUrl = process.env.RENDER_EXTERNAL_URL;
